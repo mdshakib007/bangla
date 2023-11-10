@@ -1,0 +1,221 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Flex Container for Layout */
+.flex-space-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  background-color: #dedede;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.head h3 {
+  padding: 10px;
+  text-align: center;
+  color: rgb(0, 205, 130);
+}
+
+.head p {
+  color: #797979;
+  font-size: smaller;
+  text-align: center;
+}
+
+/* Container for Blog Posts */
+.blog-box {
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+/* Cards for Blog Posts */
+.card {
+  margin: 10px 0px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/* Card Content */
+.card-body {
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.text-muted {
+  color: #a2a2a2;
+}
+
+/* Image in Card */
+.card-img-top {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.card-img-top:hover {
+  transform: scale(0.96);
+}
+
+.card-title {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bolder;
+  font-size: larger;
+  color: #4e4e4e;
+}
+
+/* navbar style  */
+nav {
+  background-color: rgba(152, 152, 152, 0.382);
+  display: flex;
+  justify-content: center;
+  padding: 10px 5px;
+  margin: 5px;
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+  border-radius: 20px;
+}
+
+.nav_items {
+  display: flex;
+  padding: 10px;
+  margin: 0;
+}
+
+.nav_list {
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav_link {
+  padding: 5px 25px;
+  margin: 0 10px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: black;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+
+.nav_link:hover {
+  border-bottom: 4px solid rgb(0, 255, 195);
+  background-color: rgba(0, 0, 0, 0.124);
+  color: rgb(47, 255, 134);
+}
+
+/* Button Styles */
+.normal-btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #e8aa42;
+  color: #fff;
+  padding: 15px 40px;
+  margin: 5px 0;
+  border: 0;
+  border-radius: 2px;
+  transition: all 0.7s ease;
+}
+
+.normal-btn:hover {
+  background-color: #333;
+}
+
+.button-1 {
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.button-1:hover {
+  background-color: rgb(181, 181, 181);
+  color: white;
+}
+
+.pagination {
+  display: flex;
+}
+
+/* Footer Styles */
+.footer {
+  padding: 3rem;
+  background-color: rgba(200, 200, 200, 0.6);
+  min-height: 10vh;
+  color: #000;
+  font-size: 1.1rem;
+}
+
+/* stickey navbar  */
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #20ff7287;
+  z-index: 9999;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 18px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 18px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+/* stickey navbar ends */
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .blog-box {
+    margin: 10px 5px;
+  }
+
+  img {
+    width: 80%;
+  }
+}
