@@ -35,7 +35,11 @@ img {
 .head h3 {
   padding: 10px;
   text-align: center;
-  color: rgb(0, 205, 130);
+  color: rgb(6, 255, 164);
+}
+
+.head h6{
+  color: rgb(131, 131, 131);
 }
 
 .head p {
@@ -52,7 +56,7 @@ img {
 
 /* Cards for Blog Posts */
 .card {
-  margin: 10px 0px;
+  margin: 30px 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #fff;
@@ -90,53 +94,14 @@ img {
   color: #4e4e4e;
 }
 
-/* navbar style  */
-nav {
-  background-color: rgba(152, 152, 152, 0.382);
-  display: flex;
-  justify-content: center;
-  padding: 10px 5px;
-  margin: 5px;
-  position: fixed;
-  bottom: 0;
-  z-index: 9999;
-  border-radius: 20px;
-}
-
-.nav_items {
-  display: flex;
-  padding: 10px;
-  margin: 0;
-}
-
-.nav_list {
-  list-style: none;
-  text-decoration: none;
-}
-
-.nav_link {
-  padding: 5px 25px;
-  margin: 0 10px;
-  padding-bottom: 20px;
-  text-decoration: none;
-  color: black;
-  border-radius: 20px;
-  transition: all 0.2s;
-}
-
-.nav_link:hover {
-  border-bottom: 4px solid rgb(0, 255, 195);
-  background-color: rgba(0, 0, 0, 0.124);
-  color: rgb(47, 255, 134);
-}
 
 /* Button Styles */
 .normal-btn {
   display: inline-block;
   text-decoration: none;
-  background-color: #e8aa42;
+  background-color: #42e884;
   color: #fff;
-  padding: 15px 40px;
+  padding: 10px 20px;
   margin: 5px 0;
   border: 0;
   border-radius: 2px;
@@ -172,6 +137,12 @@ nav {
   min-height: 10vh;
   color: #000;
   font-size: 1.1rem;
+}
+
+.footer_input{
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-left: 5px;
 }
 
 /* stickey navbar  */
@@ -217,5 +188,9 @@ nav {
 
   img {
     width: 80%;
+  }
+
+  .flex-space-around{
+    flex-direction: column;
   }
 }
