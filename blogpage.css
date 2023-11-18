@@ -1,4 +1,13 @@
 /* Global Styles */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
