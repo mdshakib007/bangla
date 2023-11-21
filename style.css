@@ -34,7 +34,7 @@
 }
 
 .normal-btn:hover {
-  background-color: #00b3ff;
+  background-color: #2f00ff;
 }
 
 .card {
@@ -50,11 +50,9 @@
 .box {
   height: 300px;
   width: 30%;
-  background-image: linear-gradient(
-    55deg,
-    rgb(97, 197, 247),
-    rgb(156, 143, 255)
-  );
+  background-image: linear-gradient(55deg,
+          rgb(97, 197, 247),
+          rgb(156, 143, 255));
   margin: 2%;
   border-radius: 1rem;
   box-shadow: 0.3rem 0.4rem 0.5rem rgb(207, 207, 207);
@@ -69,18 +67,16 @@
 .box-2 {
   height: auto;
   width: 60%;
-  background-image: linear-gradient(
-    55deg,
-    rgb(150, 236, 255),
-    rgb(117, 135, 255)
-  );
+  background-image: linear-gradient(55deg,
+          rgb(150, 236, 255),
+          rgb(117, 135, 255));
   margin: 4%;
   border-radius: 5px;
   box-shadow: 0.3rem 0.4rem 0.5rem rgb(207, 207, 207);
 }
 
 /* blog box styling  */
-.blog-box {
+.blog-box{
   height: auto;
   width: 30%;
   border: 1px solid rgba(0, 0, 0, 0.39);
@@ -89,7 +85,7 @@
   border-radius: 10px;
 }
 
-.blog-box a {
+.blog-box a{
   background-color: rgba(0, 0, 255, 0);
   font-weight: bolder;
   color: rgb(0, 255, 0);
@@ -98,12 +94,17 @@
   cursor: pointer;
 }
 
-.blog-box a:hover {
+.blog-box a:hover{
   background-color: #00b3ff00;
-  transform: translate(20px);
+  transform: translate(10px);
 }
 
-.blog-box h5 {
+.blog-box h2{
+  padding: 10px;
+  color: rgb(71, 71, 71);
+}
+
+.blog-box h5{
   color: rgb(101, 101, 101);
 }
 
@@ -113,16 +114,16 @@
   border-radius: 6px;
 }
 
-.blog-box img {
+.blog-box img{
   width: 90%;
   height: auto;
 }
 
-.blog-box h4 {
+.blog-box h4{
   color: rgb(90, 90, 90);
 }
 
-.blog-box p {
+.blog-box p{
   font-size: smaller;
   color: rgb(46, 46, 46);
 }
@@ -163,6 +164,7 @@
   cursor: pointer;
   font-size: 20px;
 }
+
 
 /* navbar starts  */
 #menu_icon {
@@ -208,7 +210,9 @@ nav {
 
 .header {
   padding: 1rem 0;
-  height: 80vh;
+  height: auto;
+  color: white;
+  background: url(./Images/bg.png) no-repeat center;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -217,19 +221,18 @@ nav {
 
 /* header section started */
 .gradient {
-  background: -webkit-linear-gradient(45deg, #00c3ff, #aa00ff);
+  background: -webkit-linear-gradient(45deg, #00c3ff, #6600ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .quick-links a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .head {
   text-align: center;
-  background-color: rgba(41, 148, 255, 0.159);
   height: auto;
 }
 
@@ -240,7 +243,7 @@ nav {
 }
 
 .head p {
-  border-bottom: 2px solid rgb(255, 180, 18);
+  border-bottom: 2px solid rgb(18, 255, 251);
   padding-bottom: 5px;
 }
 
@@ -287,7 +290,7 @@ nav {
   padding: 10px 30px;
 }
 
-#contact-info h6 {
+#contact-info h6{
   padding: 5px;
 }
 
@@ -379,7 +382,7 @@ nav {
   font-size: 18px;
   padding-left: 5px;
   font-weight: 300;
-}
+}  
 
 .skill-progress-bg {
   background: hsl(289, 94%, 53%);
@@ -389,7 +392,9 @@ nav {
 }
 
 .skill-progress-fill {
-  background: linear-gradient(to right, hsl(210, 87%, 43%), hsl(35, 100%, 68%));
+  background: linear-gradient(to right,
+  hsl(210, 87%, 43%),
+  hsl(35, 100%, 68%));
   height: 100%;
   border-radius: inherit;
 }
@@ -425,6 +430,12 @@ nav {
   background-color: #ffffff;
 }
 
+.contact img{
+  height: 200px;
+  width: auto;
+  margin: 10px;
+}
+
 textarea {
   resize: none;
   padding: 10px 10px;
@@ -434,7 +445,7 @@ textarea {
 }
 
 .h22 {
-  padding: 60px 0px;
+  padding-bottom: 50px;
 }
 
 .items input {
@@ -464,7 +475,7 @@ textarea {
   transition: all 0.3s;
 }
 
-.btn2:hover {
+.btn2:hover{
   transform: rotateY(25deg);
   border-radius: 15px;
 }
@@ -495,20 +506,20 @@ textarea {
 
 @media (max-width: 1100px) {
   .box {
-    height: 400px;
+      height: 400px;
   }
 
   .contact {
-    width: 70%;
+      width: 70%;
   }
 
   .developer-img img {
-    width: 90%;
+      width: 90%;
   }
 
   .box-2 {
-    width: 70%;
-    height: auto;
+      width: 70%;
+      height: auto;
   }
 }
 
@@ -516,11 +527,11 @@ textarea {
 
 @keyframes navbar-open {
   from {
-    transform: translateY(-100%);
+      transform: translateY(-100%);
   }
 
   to {
-    transform: translateY(0);
+      transform: translateY(0);
   }
 }
 
@@ -530,11 +541,11 @@ textarea {
 
 @keyframes navbar-close {
   from {
-    transform: translateY(0);
+      transform: translateY(0);
   }
 
   to {
-    transform: translateY(-100%);
+      transform: translateY(-100%);
   }
 }
 
@@ -546,126 +557,126 @@ textarea {
 
 @media (max-width: 992px) {
   nav {
-    position: fixed;
+      position: fixed;
   }
 
   .flex-space-around {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem 0;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem 0;
   }
 
   #menu_icon {
-    display: block;
-    cursor: pointer;
-    margin: 1rem;
-    position: fixed;
-    z-index: 9999;
-    right: 1rem;
-    top: 1rem;
+      display: block;
+      cursor: pointer;
+      margin: 1rem;
+      position: fixed;
+      z-index: 9999;
+      right: 1rem;
+      top: 1rem;
   }
 
   .hidden {
-    display: none;
+      display: none;
   }
 
   .head h1 {
-    font-size: 2rem;
-    font-family: serif;
-    padding-bottom: 10px;
+      font-size: 2rem;
+      font-family: serif;
+      padding-bottom: 10px;
   }
 
   .head p {
-    padding-bottom: 50px;
+      padding-bottom: 50px;
   }
 
   .head a {
-    border-radius: 5px;
+      border-radius: 5px;
   }
 
   .contact {
-    width: 95%;
+      width: 95%;
   }
 
   .items {
-    size: 30;
+      size: 30;
   }
 
-  .content-card {
-    margin: 20px 20px;
+  .content-card{
+      margin: 20px 20px;
   }
 
   .box {
-    width: 85%;
+      width: 85%;
   }
 
-  .box:hover {
-    transform: scale(1.03);
+  .box:hover{
+      transform: scale(1.03);
   }
 
   .box-2 {
-    width: 90%;
-    height: auto;
+      width: 90%;
+      height: auto;
   }
 
-  .blog-box {
-    width: 80%;
+  .blog-box{
+      width: 80%;
   }
 
   .experience {
-    align-items: normal;
+      align-items: normal;
   }
 
   .space {
-    height: 100px;
-    width: 100%;
+      height: 100px;
+      width: 100%;
   }
 
   .box {
-    height: 350px;
+      height: 350px;
   }
 
   .side-line {
-    height: auto;
+      height: auto;
   }
 
   .quick-links {
-    flex-direction: row;
+      flex-direction: row;
   }
 
   .developer-img img {
-    width: 70%;
+      width: 70%;
   }
 
   .extra-info {
-    padding: 10px 10px;
-    margin: 10px 20px;
+      padding: 10px 10px;
+      margin: 10px 20px;
   }
 }
 
 @media (max-width: 700px) {
   .space {
-    height: 100px;
-    width: 100%;
+      height: 100px;
+      width: 100%;
   }
 
   .box {
-    height: 300px;
+      height: 300px;
   }
 
-  .blog-box {
-    width: 90%;
+  .blog-box{
+      width: 90%;
   }
 
   .quick-links a {
-    padding: 10px 10px;
+      padding: 10px 10px;
   }
 
   .end {
-    font-size: 14px;
+      font-size: 14px;
   }
 
   .developer-img img {
-    width: 60%;
+      width: 60%;
   }
 }
