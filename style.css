@@ -75,6 +75,12 @@
   box-shadow: 0.3rem 0.4rem 0.5rem rgb(207, 207, 207);
 }
 
+.gif{
+  height: 40px;
+  width: auto;
+  padding-top: 5px;
+}
+
 /* blog box styling  */
 .blog-box {
   height: auto;
@@ -89,7 +95,7 @@
   background-color: rgba(0, 0, 255, 0);
   font-weight: bolder;
   color: rgb(0, 255, 0);
-  border: 1px solid rgba(0, 0, 0, 0.35);
+  /* border: 1px solid rgba(0, 0, 0, 0.35); */
   border-radius: 10px;
   cursor: pointer;
 }
@@ -97,6 +103,11 @@
 .blog-box a:hover {
   background-color: #00b3ff00;
   transform: translate(10px);
+}
+
+.blog-box a img{
+  height: 30px;
+  padding-top: 10px;
 }
 
 .blog-box h2 {
@@ -114,7 +125,7 @@
   border-radius: 6px;
 }
 
-.blog-box img {
+#blog-img {
   width: 90%;
   height: auto;
 }
@@ -484,6 +495,7 @@ textarea {
   margin-top: 20px;
   margin-bottom: 40px;
   border-radius: 7px;
+  box-shadow: 0.1rem 0.3rem 0.5rem rgb(107, 107, 107);
   transition: all 0.4s;
 }
 
